@@ -11,10 +11,8 @@ public class Main {
     public static void checkYear (int year) {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным.");
-            return;
         } else {
             System.out.println(year + " год не является високосным.");
-            return;
         }
     }
 
@@ -57,11 +55,8 @@ public class Main {
 
     public static int deliveryDistance  (int deliveryDistance) {
         int deliveryNearlyMax = 20;
-        int deliveryNearlyDay = 1;
         int deliveryAverageMax = 60;
-        int deliveryAverageDay = 2;
         int deliveryFarMax = 100;
-        int deliveryFarDay = 3;
 
         if (deliveryDistance < deliveryNearlyMax) {
             return 1;
